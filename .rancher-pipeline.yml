@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: golive/app:v1.0
+      tag: golive/app:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
       registry: harbor.bigbang.simbalink.cn
 timeout: 60
