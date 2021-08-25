@@ -7,5 +7,5 @@ stages:
       tag: golive/app:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
       registry: harbor.bigbang.simbalink.cn
-timeout: 60
+timeout: 360
 notification: {}
