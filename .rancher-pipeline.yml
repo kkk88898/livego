@@ -1,8 +1,2 @@
-stages:
-- name: golibe-compile
-  steps:
-  - runScriptConfig:
-      image: java:8
-      shellScript: ls
 timeout: 360
 notification: {}
