@@ -1,11 +1,8 @@
 stages:
 - name: golibe-compile
   steps:
-  - publishImageConfig:
-      dockerfilePath: ./Dockerfile
-      buildContext: .
-      tag: golive/app:${CICD_EXECUTION_SEQUENCE}
-      pushRemote: true
-      registry: 127.0.0.1:34234
+  - runScriptConfig:
+      image: java:8
+      shellScript: ls
 timeout: 360
 notification: {}
